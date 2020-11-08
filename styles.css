@@ -1,0 +1,149 @@
+/*Base*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* Utilities */
+.container {
+  max-width: 125rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/*Header & Nav*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 10rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 5rem;
+}
+
+.nav-item:last-child{
+  margin-right: 0;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: opacity .3s;
+}
+
+.nav-link:hover {
+  opacity: .6;
+}
+
+.logo {
+  display: block;
+  width: 8rem;
+}
+
+/*Main content*/
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #3b4679, #2b3153);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.landing-page::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: inherit;
+  background-image: url("./images/bg-pat.png");
+  background-size: cover;
+  z-index: -1;
+  opacity: .5;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.content-details {
+  max-width: 80%;
+}
+
+.title{
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+}
+
+.description{
+  color: #929FC5;
+  margin-bottom: 2.5rem;
+}
+
+.search input {
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  padding: 2rem;
+}
+
+.search-bar {
+  width: calc(100% - .5rem);
+}
+
+.search-btn {
+  width: 10rem;
+  background-image: linear-gradient(to right, #FF83D5, #FFCCB0);
+  cursor: pointer;
+  margin-left: -10rem;
+}
+
+.search-btn:hover {
+  background-image: linear-gradient(to left, #FF83D5, #FFCCB0);
+}
+
+/*Animations*/
+
+/*Media Queries*/
